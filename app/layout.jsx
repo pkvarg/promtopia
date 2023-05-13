@@ -6,15 +6,14 @@ import Head from 'next/head'
 export const metadata = {
   title: 'Promtopia',
   description: 'Discover & Share AI Prompts',
+  icons: {
+    icon: '/icon.png',
+  },
 }
 
 const RootLayout = ({ children }) => {
   return (
     <html lang='en'>
-      <Head>
-        <link rel='icon' href='/public/favicon.ico' />
-      </Head>
-
       <body>
         <Provider>
           <div className='main'>
